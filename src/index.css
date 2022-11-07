@@ -1,0 +1,29 @@
+@tailwind base;
+/* This will work on Firefox */
+* {
+  scrollbar-width: thin;
+}
+
+/* Targtes on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(249 115 22);
+  border-radius: 20px;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+/* base tempat untuk global style */
+@layer base {
+    button {
+        @apply border border-black rounded-xl px-5 py-1
+    }
+}
